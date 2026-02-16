@@ -6,32 +6,29 @@
   box-sizing: border-box;
 }
 
-/* Background Video */
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left;
-  z-index: -1;
-}
-
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
+  html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
 }
 
 /*NAVIGATION BAR*/
 
 nav {
-  height: 50px;
-  width: 100%;
+  height: 10vh;
+  width: 100vw;
   padding: 10px 20px;
   background: #000;
   display: flex;
@@ -183,7 +180,7 @@ nav {
 /*HERO SECTION*/
 
 .hero {
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   padding: 60px 30px 20px;
   gap: 20px;
@@ -237,6 +234,7 @@ nav {
 /*SOCIAL MEDIA SECTION*/
 
 section.media {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
